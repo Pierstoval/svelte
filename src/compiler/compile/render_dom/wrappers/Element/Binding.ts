@@ -1,11 +1,11 @@
 import { b, x } from 'code-red';
-import Binding from '../../../nodes/Binding';
-import ElementWrapper from '../Element';
-import get_object from '../../../utils/get_object';
-import Block from '../../Block';
-import Renderer from '../../Renderer';
-import flatten_reference from '../../../utils/flatten_reference';
-import EachBlock from '../../../nodes/EachBlock';
+import Binding from '../../../nodes/Binding.ts';
+import ElementWrapper from '../Element.ts';
+import get_object from '../../../utils/get_object.ts';
+import Block from '../../Block.ts';
+import Renderer from '../../Renderer.ts';
+import flatten_reference from '../../../utils/flatten_reference.ts';
+import EachBlock from '../../../nodes/EachBlock.ts';
 import { Node, Identifier } from 'estree';
 
 export default class BindingWrapper {

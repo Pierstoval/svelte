@@ -1,21 +1,21 @@
-import Wrapper from '../shared/Wrapper';
-import Renderer from '../../Renderer';
-import Block from '../../Block';
-import InlineComponent from '../../../nodes/InlineComponent';
-import FragmentWrapper from '../Fragment';
-import { sanitize } from '../../../../utils/names';
-import add_to_set from '../../../utils/add_to_set';
+import Wrapper from '../shared/Wrapper.ts';
+import Renderer from '../../Renderer.ts';
+import Block from '../../Block.ts';
+import InlineComponent from '../../../nodes/InlineComponent.ts';
+import FragmentWrapper from '../Fragment.ts';
+import { sanitize } from '../../../../utils/names.ts';
+import add_to_set from '../../../utils/add_to_set.ts';
 import { b, x, p } from 'code-red';
-import Attribute from '../../../nodes/Attribute';
-import get_object from '../../../utils/get_object';
-import create_debugging_comment from '../shared/create_debugging_comment';
-import { get_slot_definition } from '../shared/get_slot_definition';
-import EachBlock from '../../../nodes/EachBlock';
-import TemplateScope from '../../../nodes/shared/TemplateScope';
-import is_dynamic from '../shared/is_dynamic';
-import bind_this from '../shared/bind_this';
+import Attribute from '../../../nodes/Attribute.ts';
+import get_object from '../../../utils/get_object.ts';
+import create_debugging_comment from '../shared/create_debugging_comment.ts';
+import { get_slot_definition } from '../shared/get_slot_definition.ts';
+import EachBlock from '../../../nodes/EachBlock.ts';
+import TemplateScope from '../../../nodes/shared/TemplateScope.ts';
+import is_dynamic from '../shared/is_dynamic.ts';
+import bind_this from '../shared/bind_this.ts';
 import { Node, Identifier, ObjectExpression } from 'estree';
-import EventHandler from '../Element/EventHandler';
+import EventHandler from '../Element/EventHandler.ts';
 import { extract_names } from 'periscopic';
 
 export default class InlineComponentWrapper extends Wrapper {

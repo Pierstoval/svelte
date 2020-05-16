@@ -1,16 +1,16 @@
-import Wrapper from './shared/Wrapper';
-import Renderer from '../Renderer';
-import Block from '../Block';
-import Slot from '../../nodes/Slot';
-import FragmentWrapper from './Fragment';
+import Wrapper from './shared/Wrapper.ts';
+import Renderer from '../Renderer.ts';
+import Block from '../Block.ts';
+import Slot from '../../nodes/Slot.ts';
+import FragmentWrapper from './Fragment.ts';
 import { b, p, x } from 'code-red';
-import { sanitize } from '../../../utils/names';
-import add_to_set from '../../utils/add_to_set';
-import get_slot_data from '../../utils/get_slot_data';
-import Expression from '../../nodes/shared/Expression';
-import is_dynamic from './shared/is_dynamic';
+import { sanitize } from '../../../utils/names.ts';
+import add_to_set from '../../utils/add_to_set.ts';
+import get_slot_data from '../../utils/get_slot_data.ts';
+import Expression from '../../nodes/shared/Expression.ts';
+import is_dynamic from './shared/is_dynamic.ts';
 import { Identifier, ObjectExpression } from 'estree';
-import create_debugging_comment from './shared/create_debugging_comment';
+import create_debugging_comment from './shared/create_debugging_comment.ts';
 
 export default class SlotWrapper extends Wrapper {
 	node: Slot;

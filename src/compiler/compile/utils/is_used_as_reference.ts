@@ -1,5 +1,5 @@
 import { Node } from 'estree';
-import is_reference from 'is-reference';
+import is_reference from 'is-reference.ts';
 
 export default function is_used_as_reference(
 	node: Node,

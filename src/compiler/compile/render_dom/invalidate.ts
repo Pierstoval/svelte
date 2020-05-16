@@ -1,9 +1,9 @@
-import { nodes_match } from '../../utils/nodes_match';
-import { Scope } from '../utils/scope';
+import { nodes_match } from '../../utils/nodes_match.ts';
+import { Scope } from '../utils/scope.ts';
 import { x } from 'code-red';
 import { Node, Expression } from 'estree';
-import Renderer from './Renderer';
-import { Var } from '../../interfaces';
+import Renderer from './Renderer.ts';
+import { Var } from '../../interfaces.ts';
 
 export function invalidate(renderer: Renderer, scope: Scope, node: Node, names: Set<string>, main_execution_context: boolean = false) {
 	const { component } = renderer;

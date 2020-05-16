@@ -1,8 +1,8 @@
-import flatten_reference from '../../../utils/flatten_reference';
+import flatten_reference from '../../../utils/flatten_reference.ts';
 import { b, x } from 'code-red';
-import Component from '../../../Component';
-import Block from '../../Block';
-import Binding from '../../../nodes/Binding';
+import Component from '../../../Component.ts';
+import Block from '../../Block.ts';
+import Binding from '../../../nodes/Binding.ts';
 import { Identifier } from 'estree';
 
 export default function bind_this(component: Component, block: Block, binding: Binding, variable: Identifier) {

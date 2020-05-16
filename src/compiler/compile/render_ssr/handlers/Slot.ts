@@ -1,7 +1,7 @@
-import Renderer, { RenderOptions } from '../Renderer';
-import Slot from '../../nodes/Slot';
+import Renderer, { RenderOptions } from '../Renderer.ts';
+import Slot from '../../nodes/Slot.ts';
 import { x } from 'code-red';
-import get_slot_data from '../../utils/get_slot_data';
+import get_slot_data from '../../utils/get_slot_data.ts';
 
 export default function(node: Slot, renderer: Renderer, options: RenderOptions) {
 	const slot_data = get_slot_data(node.values);

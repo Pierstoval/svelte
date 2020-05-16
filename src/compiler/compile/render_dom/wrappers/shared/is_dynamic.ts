@@ -1,4 +1,4 @@
-import { Var } from '../../../../interfaces';
+import { Var } from '../../../../interfaces.ts';
 
 export default function is_dynamic(variable: Var) {
 	if (variable) {

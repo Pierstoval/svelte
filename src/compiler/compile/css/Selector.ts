@@ -1,9 +1,9 @@
-import MagicString from 'magic-string';
-import Stylesheet from './Stylesheet';
-import { gather_possible_values, UNKNOWN } from './gather_possible_values';
-import { CssNode } from './interfaces';
-import Component from '../Component';
-import Element from '../nodes/Element';
+import MagicString from 'magic-string.ts';
+import Stylesheet from './Stylesheet.ts';
+import { gather_possible_values, UNKNOWN } from './gather_possible_values.ts';
+import { CssNode } from './interfaces.ts';
+import Component from '../Component.ts';
+import Element from '../nodes/Element.ts';
 
 enum BlockAppliesToNode {
 	NotPossible,

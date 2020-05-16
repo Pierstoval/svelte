@@ -1,6 +1,6 @@
 import { Readable, writable } from 'svelte/store';
 import { loop, now, Task } from 'svelte/internal';
-import { is_date } from './utils';
+import { is_date } from './utils.ts';
 
 interface TickContext<T> {
 	inv_mass: number;

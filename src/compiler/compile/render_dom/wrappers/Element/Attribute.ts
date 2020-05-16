@@ -1,11 +1,11 @@
-import Attribute from '../../../nodes/Attribute';
-import Block from '../../Block';
-import fix_attribute_casing from './fix_attribute_casing';
-import ElementWrapper from './index';
-import { string_literal } from '../../../utils/stringify';
+import Attribute from '../../../nodes/Attribute.ts';
+import Block from '../../Block.ts';
+import fix_attribute_casing from './fix_attribute_casing.ts';
+import ElementWrapper from './index.ts';
+import { string_literal } from '../../../utils/stringify.ts';
 import { b, x } from 'code-red';
-import Expression from '../../../nodes/shared/Expression';
-import Text from '../../../nodes/Text';
+import Expression from '../../../nodes/shared/Expression.ts';
+import Text from '../../../nodes/Text.ts';
 
 export default class AttributeWrapper {
 	node: Attribute;
